@@ -78,4 +78,3 @@ def s3_hanlder(event, context):
 	"""
     live_data_buffer = get_file_from_S3(s3_bucket=event['s3_bucket'], s3_key=event['s3_key'])
     parse_file(data_buffer=live_data_buffer, kinesis_stream=event['kinesis_stream'], delay=int(event['default_throttling']))
-
