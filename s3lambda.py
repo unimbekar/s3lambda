@@ -11,7 +11,7 @@ Additionally modifying the timeout is supported.
 Your event should have the following items:
 
 {
-  "s3_bucket": "BUCKET"
+  "s3_bucket": "BUCKET",
   "s3_key": "KEY_TO_YOUR_S3_ASSET",
   "kinesis_stream": "PATH_TO_KINESIS_STREAM",
   "default_throttling": "1"
